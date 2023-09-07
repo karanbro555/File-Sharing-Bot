@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "26744850"))
 API_HASH = os.environ.get("API_HASH", "6ec3f450bb9e9ab23f050dbafe6acbb6")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "1928582422"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1928582422"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6595295474"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "-6595295474"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://hinatabot:hinatabot@hinat
 DB_NAME = os.environ.get("DATABASE_NAME", "hinatabot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "1898803722"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1898803722"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
