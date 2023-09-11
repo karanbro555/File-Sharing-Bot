@@ -85,7 +85,8 @@ async def start_command(client: Client, message: Message):
                 pass
         return
     else:
-        reply_markup = InlineKeyboardMarkup
+        reply_markup = InlineKeyboardMarkup(
+        )
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
@@ -195,4 +196,4 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
     else:
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
-        await msg.delete()        await msg.delete()
+        await msg.delete()
